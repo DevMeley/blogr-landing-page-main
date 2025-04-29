@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.global-css {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+header {
+  color: white;
+  background-image: 
+  url("./images/bg-pattern-intro-desktop.svg"),
+  linear-gradient(
+      to right,
+      hsl(13, 100%, 72%),
+      hsl(353, 100%, 62%)
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 80vh;
+  border-radius: 0 0 0 100px;
+}
+.left-nav {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+.nav-btns{
+    display: flex;
+    gap: 20px;
+    font-weight: bolder;
+}
+.sign-up{
+    padding: 14px 28px;
+    border-radius: 28px;
+    border: none;
+    color:  hsl(356, 100%, 66%);
+}
+.log-in{
+    background: none;
+    border: none;
+    color: white;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+.hero h1{
+    font-size: 40px
+}
+.hero .hero-btns button{
+    padding: 16px 32px;
+    border: none;
+    border-radius: 32px;
+}
+.hero .hero-btns .start-for-free{
+    background-color: white;
+    color: hsl(356, 100%, 66%);
+    margin-right: 20px;
+}
+.hero .hero-btns .learn-more{
+    background: none;
+    border: 2px solid white;
+    color: white;
+}
+.design-for-future{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.design-for-future-contents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.design-for-future h3{
+    text-align: center;
+    color: hsl(208, 49%, 24%);
+    font-size: 24px;
+}
+.design-for-future-txt{
+    width: 350px;
+    color: hsl(208, 49%, 24%);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.design-for-future-txt1 p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.design-for-future-txt2 p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.image-for-design-for-future img{
+    width:600px;
+}
+.State-of-the-Art-Infrastructure{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(208, 49%, 24%);
+    color: white;
+    border-radius: 0 100px 0 100px ;
+
+}
+.State-of-the-Art-Infrastructure h4{
+    font-size: 32px;
+}
+.image-State-of-the-Art-Infrastructure{
+    position: relative;
+}
+.image-State-of-the-Art-Infrastructure .img1{
+    width: 600px;
+}
+.image-State-of-the-Art-Infrastructure .img2{
+    width: 350px;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+.State-of-the-Art-Infrastructure-txt{
+    width: 500px;
+}
+.image-for-Free-open-simple img{
+    width: 700px;
+}
+.Free-open-simple{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+.Free-open-simple-txt{
+    width: 350px;
+    color: hsl(208, 49%, 24%);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.Free-open-simple-txt1 p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.Free-open-simple-txt2 p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    background-color: hsl(208, 49%, 24%);
+    padding-top: 60px;
+    padding-bottom: 80px;
+    color: white;
+    border-radius: 0 100px 0 0 ;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.product ul li{ 
+    list-style: none;
+    margin-bottom: 10px;
+}
