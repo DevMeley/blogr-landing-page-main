@@ -12,13 +12,8 @@ body {
 }
 header {
   color: white;
-  background-image: 
-  url("./images/bg-pattern-intro-desktop.svg"),
-  linear-gradient(
-      to right,
-      hsl(13, 100%, 72%),
-      hsl(353, 100%, 62%)
-    );
+  background-image: url("./images/bg-pattern-intro-desktop.svg"),
+    linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -41,150 +36,289 @@ nav ul li {
   display: inline-block;
   margin-right: 20px;
 }
-.nav-btns{
-    display: flex;
+.nav-btns {
+  display: flex;
+  gap: 20px;
+  font-weight: bolder;
+}
+.hamburgar{
+    display: none;
+}
+.sign-up {
+  padding: 14px 28px;
+  border-radius: 28px;
+  border: none;
+  color: hsl(356, 100%, 66%);
+}
+.log-in {
+  background: none;
+  border: none;
+  color: white;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 100px;
+}
+.hero h1 {
+  font-size: 40px;
+}
+.hero .hero-btns button {
+  padding: 16px 32px;
+  border: none;
+  border-radius: 32px;
+}
+.hero .hero-btns .start-for-free {
+  background-color: white;
+  color: hsl(356, 100%, 66%);
+  margin-right: 20px;
+}
+.hero .hero-btns .learn-more {
+  background: none;
+  border: 2px solid white;
+  color: white;
+}
+.design-for-future {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.design-for-future-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.design-for-future h3 {
+  text-align: center;
+  color: hsl(208, 49%, 24%);
+  font-size: 24px;
+}
+.design-for-future-txt {
+  width: 350px;
+  color: hsl(208, 49%, 24%);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.design-for-future-txt1 p {
+  font-size: 14px;
+  margin-top: 20px;
+}
+.design-for-future-txt2 p {
+  font-size: 14px;
+  margin-top: 20px;
+}
+.image-for-design-for-future img {
+  width: 600px;
+}
+.State-of-the-Art-Infrastructure {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background-color: hsl(208, 49%, 24%);
+  color: white;
+  border-radius: 0 100px 0 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.State-of-the-Art-Infrastructure h4 {
+  font-size: 32px;
+}
+.image-State-of-the-Art-Infrastructure {
+  position: relative;
+}
+.image-State-of-the-Art-Infrastructure .img1 {
+  width: 600px;
+}
+.image-State-of-the-Art-Infrastructure .img2 {
+  width: 350px;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+.State-of-the-Art-Infrastructure-txt {
+  width: 500px;
+}
+.image-for-Free-open-simple img {
+  width: 700px;
+}
+.Free-open-simple {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+.Free-open-simple-txt {
+  width: 350px;
+  color: hsl(208, 49%, 24%);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.Free-open-simple-txt1 p {
+  font-size: 14px;
+  margin-top: 20px;
+}
+.Free-open-simple-txt2 p {
+  font-size: 14px;
+  margin-top: 20px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  background-color: hsl(208, 49%, 24%);
+  padding-top: 60px;
+  padding-bottom: 80px;
+  color: white;
+  border-radius: 0 100px 0 0;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.product ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+
+
+@media screen and (max-width: 375px) {
+  
+  body {
+    font-size: 14px; 
+  }
+
+  .global-css {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  header {
+    height: auto; 
+    padding: 20px 0; 
+    border-radius: 0; 
+    background-position: center; 
+    border-radius: 0 0 0 50px;
+  }
+
+  .left-nav {
+    flex-direction: column; 
+    gap: 20px; 
+  }
+.left-nav ul li{
+    display: none;
+}
+
+  .nav-btns {
+    display: none;
+  }
+
+  .hamburgar{
+      display: block;
+  }
+    
+  .hero {
+    margin-bottom: 40px;
+    margin-top: 40px; 
+    gap: 20px; 
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 28px; 
+  }
+
+  .hero .hero-btns button {
+    padding: 12px 20px; 
+    font-size: 12px; 
+  }
+  .design-for-future {
+    margin-top: 40px;
+    gap: 30px; 
+  } 
+
+  .design-for-future-contents {
+    flex-direction: column; 
     gap: 20px;
-    font-weight: bolder;
-}
-.sign-up{
-    padding: 14px 28px;
-    border-radius: 28px;
-    border: none;
-    color:  hsl(356, 100%, 66%);
-}
-.log-in{
-    background: none;
-    border: none;
-    color: white;
-}
-.hero{
+  }
+
+  .design-for-future-txt {
+    width: 100%; 
+    text-align: center;
+  }
+
+  .image-for-design-for-future img {
+    width: 100%;
+  }
+
+ 
+  .State-of-the-Art-Infrastructure {
+    flex-direction: column; 
+    text-align: center; 
+    padding: 20px;
+    gap: 30px;
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .image-State-of-the-Art-Infrastructure .img1 {
+    width: 250px; 
+  }
+
+  .image-State-of-the-Art-Infrastructure .img2 {
+    width: 200px; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .State-of-the-Art-Infrastructure-txt {
+    width: 100%; 
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .State-of-the-Art-Infrastructure-txt h4 {
+    font-size: 18px; 
+  }
+
+  .State-of-the-Art-Infrastructure-txt p {
+    font-size: 12px;
+    line-height: 1.5; 
+  }
+
+  .Free-open-simple {
+    flex-direction: column; 
+    gap: 20px; 
+    margin-top: 40px; 
+  }
+
+  .Free-open-simple-txt {
+    width: 100%; 
+    text-align: center; 
+  }
+
+  .image-for-Free-open-simple img {
+    width: 100%; 
+  }
+
+  footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    margin-top: 100px;
-}
-.hero h1{
-    font-size: 40px
-}
-.hero .hero-btns button{
-    padding: 16px 32px;
-    border: none;
-    border-radius: 32px;
-}
-.hero .hero-btns .start-for-free{
-    background-color: white;
-    color: hsl(356, 100%, 66%);
-    margin-right: 20px;
-}
-.hero .hero-btns .learn-more{
-    background: none;
-    border: 2px solid white;
-    color: white;
-}
-.design-for-future{
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-}
-.design-for-future-contents{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.design-for-future h3{
-    text-align: center;
-    color: hsl(208, 49%, 24%);
-    font-size: 24px;
-}
-.design-for-future-txt{
-    width: 350px;
-    color: hsl(208, 49%, 24%);
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.design-for-future-txt1 p{
-    font-size: 14px;
-    margin-top: 20px;
-}
-.design-for-future-txt2 p{
-    font-size: 14px;
-    margin-top: 20px;
-}
-.image-for-design-for-future img{
-    width:600px;
-}
-.State-of-the-Art-Infrastructure{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: hsl(208, 49%, 24%);
-    color: white;
-    border-radius: 0 100px 0 100px ;
-
-}
-.State-of-the-Art-Infrastructure h4{
-    font-size: 32px;
-}
-.image-State-of-the-Art-Infrastructure{
-    position: relative;
-}
-.image-State-of-the-Art-Infrastructure .img1{
-    width: 600px;
-}
-.image-State-of-the-Art-Infrastructure .img2{
-    width: 350px;
-    position: absolute;
-    top: 40%;
-    left: 30%;
-}
-.State-of-the-Art-Infrastructure-txt{
-    width: 500px;
-}
-.image-for-Free-open-simple img{
-    width: 700px;
-}
-.Free-open-simple{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 60px;
-}
-.Free-open-simple-txt{
-    width: 350px;
-    color: hsl(208, 49%, 24%);
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-.Free-open-simple-txt1 p{
-    font-size: 14px;
-    margin-top: 20px;
-}
-.Free-open-simple-txt2 p{
-    font-size: 14px;
-    margin-top: 20px;
-}
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: first baseline;
-    background-color: hsl(208, 49%, 24%);
-    padding-top: 60px;
-    padding-bottom: 80px;
-    color: white;
-    border-radius: 0 100px 0 0 ;
-}
-.product{
-    display: flex;
-    flex-direction: column;
     gap: 20px;
-}
-.product ul li{ 
-    list-style: none;
-    margin-bottom: 10px;
+    text-align: center; 
+    margin-top: 60px;
+  }
 }
