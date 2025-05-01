@@ -43,6 +43,7 @@ nav ul li {
 .product-menu ul li {
   list-style: none;
   padding-bottom: 20px;
+  cursor: pointer;
 }
 .product-menu {
   background-color: white;
@@ -52,10 +53,12 @@ nav ul li {
   border-radius: 10px;
   position: absolute;
   left: 35%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2)
 }
 .company-menu ul li {
   list-style: none;
   padding-bottom: 20px;
+  cursor: pointer;
 }
 .company-menu {
   background-color: white;
@@ -65,11 +68,19 @@ nav ul li {
   border-radius: 10px;
   position: absolute;
   left: 45%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2)
 }
 
 .connect-menu ul li {
   list-style: none;
   padding-bottom: 20px;
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+}
+.product-menu a, .company-menu a, .connect-menu a {
+  color: black;
 }
 .connect-menu {
   background-color: white;
@@ -79,6 +90,7 @@ nav ul li {
   border-radius: 10px;
   position: absolute;
   left: 55%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2)
 }
 .product-menu,
 .company-menu,
@@ -242,6 +254,10 @@ footer {
 .product ul li {
   list-style: none;
   margin-bottom: 10px;
+}
+
+.product ul li a{
+  color: white;
 }
 
 @media screen and (max-width: 505px) {
